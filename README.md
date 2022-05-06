@@ -12,3 +12,5 @@
 ### 飞书告警机器人 设置
 
 自定义机器人 获取 webhook 地址	
+
+<img width="751" alt="image" src="https://user-images.githubusercontent.com/10955940/167085086-63b0836f-b3c8-4381-b7f9-491c0560f74c.png">
