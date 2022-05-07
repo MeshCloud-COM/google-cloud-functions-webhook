@@ -53,6 +53,9 @@
 ##### 设置通知通道
 <img width="1913" alt="image" src="https://user-images.githubusercontent.com/10955940/167241983-aaf80877-08e4-40be-a0e7-0e9cd6f7a786.png">
 
+### 测试
+执行虚机关机操作，告警信息会通知到飞书群
+
 ### 参考资料
 * https://cloud.google.com/monitoring/alerts
 * https://cloud.google.com/monitoring/support/notification-options
