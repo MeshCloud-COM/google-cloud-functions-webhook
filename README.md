@@ -56,7 +56,7 @@
 ### 测试
 执行虚机关机操作，告警信息会通知到飞书群
 
-### 参考资料
+##### 日志数据 json 示例
 
 ```json
 {
@@ -127,6 +127,10 @@
   "version": "1.2"
 }
 ```
+
+
+### 参考资料
+
 
 * https://cloud.google.com/monitoring/alerts
 * https://cloud.google.com/monitoring/support/notification-options
