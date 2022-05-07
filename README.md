@@ -29,8 +29,10 @@
 
 获取 Google Cloud Functions 的地址 https://us-central1-spoton-project.cloudfunctions.net/xxxxxx
 
-### 创建 Monitoring 通知通道  关联 Google Cloud Functions 的地址
+### 创建 Monitoring 通知通道  
+
 ![image](https://user-images.githubusercontent.com/10955940/167241559-ed03ae37-1f66-4dfb-9a4a-73d0f76f6411.png)
+关联 Google Cloud Functions 的地址
 ![image](https://user-images.githubusercontent.com/10955940/167241564-9c3e15e1-2aad-4c08-8d60-6cd259560d16.png)
 
 
@@ -49,8 +51,7 @@
 
 
 ##### 设置通知通道
-![image](https://user-images.githubusercontent.com/10955940/167241592-84825835-5f74-4e6a-9d2b-ce369037e207.png)
-
+<img width="1913" alt="image" src="https://user-images.githubusercontent.com/10955940/167241983-aaf80877-08e4-40be-a0e7-0e9cd6f7a786.png">
 
 ### 参考资料
 * https://cloud.google.com/monitoring/alerts
