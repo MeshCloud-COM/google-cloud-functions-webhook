@@ -4,7 +4,7 @@ import json
 FEISHU_WEBHOOK_URL = "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxxxxxxx"
 
 
-def feishu_alter(request):
+def feishu_alert(request):
     """Responds to any HTTP request.
     Args:
         request (flask.Request): HTTP request object.
@@ -19,6 +19,8 @@ def feishu_alter(request):
         message = request.args.get('message')
     elif request_json and 'message' in request_json:
         message = request_json['message']
+    elif request_json and 'incident' in request_json:
+        message = json.dumps(request_json['incident'])
     else:
         message = f'no message'
 
