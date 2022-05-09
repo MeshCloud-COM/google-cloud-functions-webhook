@@ -1,5 +1,10 @@
 # google-cloud-functions-webhook
 
+## 通过 GCP Monitoring 创建告警消息 
+![image](https://user-images.githubusercontent.com/10955940/167338374-3dc5ec84-8b3d-46a0-b0da-938585ced1ec.png)
+![image](https://user-images.githubusercontent.com/10955940/167338391-168fc0a6-9280-4c38-8af4-2dc09e6a65cd.png)
+![image](https://user-images.githubusercontent.com/10955940/167338409-e6300ed0-14e5-4dbb-b4ab-885edcb457db.png)
+
 
 ## GCP 过滤日志并通知到飞书的两种方式
 
