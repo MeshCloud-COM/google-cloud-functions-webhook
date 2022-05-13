@@ -57,7 +57,7 @@ triggered_http设置Authentication Allow unauthenticated invocations
 ![image](https://user-images.githubusercontent.com/10955940/167338409-e6300ed0-14e5-4dbb-b4ab-885edcb457db.png)
 
 
-## 示例二 Logging alert
+## 示例二 通过Logging alert 创建告警消息到飞书
 
 ##### 设置过滤条件
 ![image](https://user-images.githubusercontent.com/10955940/167241572-b5166373-0208-415d-9ba3-3aafceacb21c.png)
