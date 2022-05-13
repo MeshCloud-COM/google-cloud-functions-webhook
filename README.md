@@ -12,6 +12,9 @@
 ### 注意事项 
 triggered_http设置Authentication Allow unauthenticated invocations
 
+### 环境变量设置
+<img width="1754" alt="image" src="https://user-images.githubusercontent.com/10955940/168218552-74a04442-cca9-4e2b-b0a3-a600fa7accbf.png">
+
 
 ## 示例 一  通过 GCP Monitoring 创建告警消息到飞书 
 
