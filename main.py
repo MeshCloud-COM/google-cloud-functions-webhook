@@ -1,16 +1,12 @@
-import requests
+import os
 import json
+import base64
+import requests
 
-from requests.auth import HTTPBasicAuth
-
-WEBHOOK_URL = "https://xxxxxxxxxxxxx"
-PROM_USER = "test_user"
-PROM_PASS = "test_pass"
-AUTH = HTTPBasicAuth(PROM_USER, PROM_PASS)
+FEISHU_WEBHOOK_URL = os.getenv("FEISHU_WEBHOOK_URL")
 
 
-
-def feishu_alert(request):
+def feishu_alert_http(request):
     """Responds to any HTTP request.
     Args:
         request (flask.Request): HTTP request object.
@@ -35,10 +31,27 @@ def feishu_alert(request):
         "content": {
             "text": "标题：{0} \n消息：{1}".format("GCP 告警", message)}
     }
-    headers = {
-        'Content-Type': 'application/json'
+
+    res = requests.request("POST", FEISHU_WEBHOOK_URL, json=payload_message)
+
+    return f'ok'
+
+
+def feishu_alert_pubsub(event, context):
+    """Triggered from a message on a Cloud Pub/Sub topic.
+    Args:
+         event (dict): Event payload.
+         context (google.cloud.functions.Context): Metadata for the event.
+    """
+
+    msg = base64.b64decode(event['data']).decode('utf-8')
+
+    payload_message = {
+        "msg_type": "text",
+        "content": {
+            "text": "标题：{0} \n消息：{1}".format("GCP pub sub 告警", msg)}
     }
 
-    resp = requests.post(WEBHOOK_URL, json=payload_message, headers=headers, auth=AUTH)
+    res = requests.request("POST", FEISHU_WEBHOOK_URL, json=payload_message)
 
     return f'ok'
