@@ -13,10 +13,7 @@
 triggered_http设置Authentication Allow unauthenticated invocations
 
 
-## 示例  通过 GCP Monitoring 创建告警消息到飞书 
-![image](https://user-images.githubusercontent.com/10955940/167338374-3dc5ec84-8b3d-46a0-b0da-938585ced1ec.png)
-![image](https://user-images.githubusercontent.com/10955940/167338391-168fc0a6-9280-4c38-8af4-2dc09e6a65cd.png)
-![image](https://user-images.githubusercontent.com/10955940/167338409-e6300ed0-14e5-4dbb-b4ab-885edcb457db.png)
+## 示例 一  通过 GCP Monitoring 创建告警消息到飞书 
 
 
 ### 创建飞书告警机器人
@@ -25,7 +22,7 @@ triggered_http设置Authentication Allow unauthenticated invocations
 
 自定义机器人 获取 webhook 地址    
 
-### 使用 Cloud Function 创建一个 Webhook  
+### 使用 Cloud Function 创建一个 Webhook 
 
 ##### 配置
 ![image](https://user-images.githubusercontent.com/10955940/167241523-38d7fa28-1cf0-4dea-876c-8a810e8be34b.png)
@@ -54,8 +51,13 @@ triggered_http设置Authentication Allow unauthenticated invocations
 关联 Google Cloud Functions 的地址
 ![image](https://user-images.githubusercontent.com/10955940/167241564-9c3e15e1-2aad-4c08-8d60-6cd259560d16.png)
 
+### 创建 Monitoring 告警
+![image](https://user-images.githubusercontent.com/10955940/167338374-3dc5ec84-8b3d-46a0-b0da-938585ced1ec.png)
+![image](https://user-images.githubusercontent.com/10955940/167338391-168fc0a6-9280-4c38-8af4-2dc09e6a65cd.png)
+![image](https://user-images.githubusercontent.com/10955940/167338409-e6300ed0-14e5-4dbb-b4ab-885edcb457db.png)
 
-### 创建 Logging alert
+
+## 示例二 Logging alert
 
 ##### 设置过滤条件
 ![image](https://user-images.githubusercontent.com/10955940/167241572-b5166373-0208-415d-9ba3-3aafceacb21c.png)
