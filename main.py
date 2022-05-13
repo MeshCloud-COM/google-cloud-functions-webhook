@@ -1,7 +1,13 @@
 import requests
 import json
 
-FEISHU_WEBHOOK_URL = "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxxxxxxxxxx"
+from requests.auth import HTTPBasicAuth
+
+WEBHOOK_URL = "https://xxxxxxxxxxxxx"
+PROM_USER = "test_user"
+PROM_PASS = "test_pass"
+AUTH = HTTPBasicAuth(PROM_USER, PROM_PASS)
+
 
 
 def feishu_alert(request):
@@ -33,6 +39,6 @@ def feishu_alert(request):
         'Content-Type': 'application/json'
     }
 
-    res = requests.request("POST", FEISHU_WEBHOOK_URL, headers=headers, data=json.dumps(payload_message))
+    resp = requests.post(WEBHOOK_URL, json=payload_message, headers=headers, auth=AUTH)
 
     return f'ok'
