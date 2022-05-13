@@ -1,15 +1,22 @@
-# google-cloud-functions-webhook
+# 说明文档
 
-## 通过 GCP Monitoring 创建告警消息 
+
+### Google Cloud Functions 设置
+* Python version: 3.8
+* requests version:  2.25.1
+* Entry point：  triggered_http
+
+### 环境变量 设置
+* 飞书 WEBHOOK_URL = "http://xxxx"
+
+### 注意事项 
+triggered_http设置Authentication Allow unauthenticated invocations
+
+
+## 示例  通过 GCP Monitoring 创建告警消息到飞书 
 ![image](https://user-images.githubusercontent.com/10955940/167338374-3dc5ec84-8b3d-46a0-b0da-938585ced1ec.png)
 ![image](https://user-images.githubusercontent.com/10955940/167338391-168fc0a6-9280-4c38-8af4-2dc09e6a65cd.png)
 ![image](https://user-images.githubusercontent.com/10955940/167338409-e6300ed0-14e5-4dbb-b4ab-885edcb457db.png)
-
-
-## GCP 过滤日志并通知到飞书的两种方式
-
-* 方式一  Logs Alter + Cloud Function Webhook
-* 方式二  Logs Router + Pub/Sub + Cloud Function Webhook 
 
 
 ## 方式一 Logs Alter + Cloud Function Webhook
@@ -20,7 +27,7 @@
 
 自定义机器人 获取 webhook 地址    
 
-### 创建一个 Webhook 使用 Cloud Function 
+### 使用 Cloud Function 创建一个 Webhook  
 
 ##### 配置
 ![image](https://user-images.githubusercontent.com/10955940/167241523-38d7fa28-1cf0-4dea-876c-8a810e8be34b.png)
